@@ -7,7 +7,7 @@ var paths = [
 var webpack = require('webpack');  
 module.exports = {  
     entry: [
-      "./js/app.js"
+      "./entry.js"
     ],
     output: {
         path: __dirname + '/build',
