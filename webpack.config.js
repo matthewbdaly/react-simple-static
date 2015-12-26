@@ -12,7 +12,7 @@ var data = {
 var webpack = require('webpack');  
 module.exports = {  
     entry: [
-      "./entry.js"
+      "./js/app.js"
     ],
     output: {
         path: __dirname + '/build',
