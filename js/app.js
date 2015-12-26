@@ -9,6 +9,6 @@ export default function render(locals, callback) {
   const history = createMemoryHistory();
   const location = history.createLocation(locals.path);
 
-  var html = ReactDOMServer.renderToStaticMarkup(React.createElement(Root, locals))
-  callback(null, '<!DOCTYPE html>' + html)
+  var html = ReactDOMServer.renderToStaticMarkup(React.createElement(Root, locals));
+  callback(null, '<!DOCTYPE html>' + html);
 };
