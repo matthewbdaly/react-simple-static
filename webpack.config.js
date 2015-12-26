@@ -2,6 +2,7 @@ var StaticSiteGeneratorPlugin = require('static-site-generator-webpack-plugin');
 
 var paths = [
   '/',
+  '/about'
 ];
 
 var data = {
