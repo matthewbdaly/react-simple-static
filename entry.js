@@ -1,8 +1,8 @@
-var React = require('react')
-var ReactDOMServer = require('react-dom/server');
-var Root = require('./components/Root')
+import React from 'react';
+import ReactDOMServer from 'react-dom/server';
+import Root from './components/Root';
 
-module.exports = function render(locals, callback) {
+export default function render(locals, callback) {
   var html = ReactDOMServer.renderToStaticMarkup(React.createElement(Root, locals))
   callback(null, '<!DOCTYPE html>' + html)
-}
+};
