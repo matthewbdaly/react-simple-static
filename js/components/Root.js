@@ -10,6 +10,7 @@ export default React.createClass({
         <body>
           <h1>Test</h1>
         </body>
+        <script language="javascript" type="text/javascript" src="/js/bundle.js" />
       </html>
     )
   }
