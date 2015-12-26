@@ -1,9 +1,7 @@
-var React = require('react');
-var Router = require('react-router');
-var RouteHandler = Router.RouteHandler;
+import React from 'react';
 
-var Root = React.createClass({
-  render: function () {
+export default React.createClass({
+  render() {
     return (
       <html>
         <head>
@@ -16,5 +14,3 @@ var Root = React.createClass({
     )
   }
 });
-
-module.exports = Root;
