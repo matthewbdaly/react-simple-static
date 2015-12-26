@@ -1,6 +1,2 @@
-# react-app-skeleton
-
-A simple React app skeleton. Includes React-Router
-
-[![Build Status](https://travis-ci.org/matthewbdaly/react-app-skeleton.svg?branch=master)](https://travis-ci.org/matthewbdaly/react-app-skeleton)
-[![Coverage Status](https://coveralls.io/repos/matthewbdaly/react-app-skeleton/badge.svg?branch=master&service=github)](https://coveralls.io/github/matthewbdaly/react-app-skeleton?branch=master)
+# react-simple-static
+Proof of concept for a React-based static site generator
