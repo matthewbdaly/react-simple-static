@@ -1,3 +1,9 @@
+var StaticSiteGeneratorPlugin = require('static-site-generator-webpack-plugin');
+
+var paths = [
+  '/',
+];
+
 var webpack = require('webpack');  
 module.exports = {  
     entry: [
@@ -16,7 +22,8 @@ module.exports = {
         ]
     },
     plugins: [
-      new webpack.NoErrorsPlugin()
+      new webpack.NoErrorsPlugin(),
+      new StaticSiteGeneratorPlugin('main', paths, {})
     ]
 
 };
