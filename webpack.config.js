@@ -1,30 +1,19 @@
 var webpack = require('webpack');  
 module.exports = {  
     entry: [
-      'webpack/hot/only-dev-server',
-      "./js/app.js",
-      "./scss/style.scss"
+      "./js/app.js"
     ],
     output: {
         path: __dirname + '/build',
-        filename: "bundle.js"
+        filename: "bundle.js",
+        libraryTarget: 'umd'
     },
     module: {
-        preLoaders: [
-          {
-            test: /(\.js$|\.jsx$)/, 
-            exclude: /node_modules/, 
-            loader: "eslint-loader"
-          }
-        ],
         loaders: [
             { test: /\.jsx?$/, loaders: ['react-hot', 'babel'], exclude: /node_modules/ },
             { test: /\.js$/, exclude: /node_modules/, loader: 'babel-loader'},
             { test: /\.scss$/, loader: "style!css!sass" }
         ]
-    },
-    eslint: {
-      configFile: '.eslintrc.yml'
     },
     plugins: [
       new webpack.NoErrorsPlugin()
