@@ -8,7 +8,7 @@ export default React.createClass({
           <title>{this.props.title}</title>
         </head>
         <body>
-          <h1>Test</h1>
+          {this.props.children}
         </body>
         <script language="javascript" type="text/javascript" src="/js/bundle.js" />
       </html>
