@@ -8,7 +8,6 @@ import { Router, RoutingContext, match } from 'react-router';
 export default function render(locals, callback) {
   const history = createMemoryHistory();
   const location = history.createLocation(locals.path);
-  console.log(locals);
 
   match({ routes, location }, (error, redirectLocation, renderProps) => {
     var html = ReactDOMServer.renderToStaticMarkup(<RoutingContext {...renderProps} />);
