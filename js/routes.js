@@ -1,9 +1,7 @@
-var React = require('react');
-var Router = require('react-router');
-var Route = Router.Route;
-var DefaultRoute = Router.DefaultRoute;
-var Root = require('./components/Root');
-var Index = require('./components/Index');
+import React from 'react';
+import { Route, DefaultRoute } from 'react-router';
+import Root from './components/Root';
+import Index from './components/Index';
 
 var Routes = (
   <Route handler={Root} path='/'>
